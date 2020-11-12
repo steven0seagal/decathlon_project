@@ -11,7 +11,8 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
-import os 
+import os
+import django_heroku
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -23,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '%puz2-zm6%_*y)(0i$fbkmio(1)19q8v4$0uxo%%+)6gd&zz6p'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -134,3 +135,5 @@ APPEND_SLASH=True
 
 # ApI KEY to https://www.omdbapi.com
 API_KEY = 'ea6fba10'
+
+django_heroku.settings(locals())
