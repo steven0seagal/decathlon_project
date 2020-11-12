@@ -122,3 +122,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+APPEND_SLASH=True
+
+# ApI KEY to https://www.omdbapi.com
+API_KEY = 'ea6fba10'

@@ -4,7 +4,7 @@ from .models import MovieData,Rating,Comment
 # Register your models here.
 
 class MovieDataAdmin(admin.ModelAdmin):
-    fields = ['title', 'year', 'rated', 'relased', 'runtime']
+    fields = ['title', 'year', 'rated', 'released', 'runtime']
 admin.site.register(MovieData, MovieDataAdmin)
 
 class RatingAdmin(admin.ModelAdmin):
