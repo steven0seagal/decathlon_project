@@ -39,6 +39,8 @@ python3 manage.py runserver
 <h1>Usage</h1>
 <p>Below are listed all functionalities of this project and how to call them via curl command it is better to download first few movie data to understand all commands</p>
 
+<h2>Demo site is under this url http://161.35.226.14  do to test replace http://localhost:8000 in all calls</h2>
+
 <p>Download data from server and save to object</p>
 
 ```
